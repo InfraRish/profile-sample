@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2>My Profile</h2>
+            </div>
+            <div class="card-body" id="profile-container">
+                <!-- Profile information will be loaded here -->
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-primary mb-3" onclick="saveProfile()">Save Changes</button>
+                <h4>Add New Data</h4>
+                <form id="new-data-form" onsubmit="addNewData(event)">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="new-key" placeholder="Key" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="new-value" placeholder="Value" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="new-link" placeholder="Link (Optional)">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Add Data</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
